@@ -1,5 +1,7 @@
-$red: pink;
+$bg: pink;
+$text: #f00;
 
 body {
-  background: $red;
+	background: $bg;
+	color: $text;
 }

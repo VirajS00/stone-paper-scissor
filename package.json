@@ -1,17 +1,18 @@
 {
-  "name": "sass-made-easy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
-   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.32.4"
-  }
+	"name": "sass-made-easy",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npm run clean && parcel src/index.html --out-dir development -p 3000",
+		"build": "rimraf ./dist && parcel build src/*.html --out-dir dist --public-url ./",
+		"clean": "rimraf ./development && rimraf ./.cache"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4",
+		"sass": "^1.32.4"
+	}
 }
