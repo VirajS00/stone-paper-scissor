@@ -1,4 +1,8 @@
-# Sass starter using Parcel
+# Stone, paper, scissors
+
+## Description
+
+This is the game of stone paper and scissors made in vanilla JS and SCSS for styling, setup with parcel.
 
 ## How to use this repo
 
