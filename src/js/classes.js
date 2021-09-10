@@ -60,13 +60,18 @@ class stonePaperScissors {
 		return [output, win];
 	}
 
+	capFirstLetter(s) {
+		return s.charAt(0).toUpperCase() + s.slice(1);
+	}
+
 	show() {
 		let output = this.winLoose();
 		let win = output[1] ? 'Win!' : 'Loose';
 		let value = output[0];
-		console.log(`Input: ${this.input}`);
-		console.log(`Value: ${value}`);
-		console.log(`Wind or loose: ${win}`);
+		return {
+			win: win,
+			value: value
+		};
 	}
 }
 
