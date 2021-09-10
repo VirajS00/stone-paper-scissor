@@ -1,7 +1,14 @@
-$bg: pink;
-$text: #f00;
+@use 'utilities' as *;
+@use 'abstracts' as *;
+@use 'base';
 
 body {
-	background: $bg;
-	color: $text;
+	background: var(--clr-neutral-700);
+}
+
+.output {
+	min-width: 100px;
+	min-height: 1rem;
+	background-color: #fff;
+	display: block;
 }
