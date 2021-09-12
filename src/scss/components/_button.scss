@@ -1,0 +1,30 @@
+.buttons-container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	max-width: 500px;
+	margin: 2em auto;
+	gap: 1em;
+
+	p {
+		margin: 0.1em 0;
+		font-size: 1.1rem;
+		text-align: center;
+	}
+}
+
+.button {
+	background-color: var(--clr-button-bg);
+	color: #fff;
+	border: 0.5em solid var(--clr-button-border);
+	font-size: 1.2rem;
+	font-family: 'Heebo', sans-serif;
+	padding: 0.5em 1em;
+	border-radius: 100vw;
+	min-height: 5rem;
+
+	&.computer {
+		border-color: var(--clr-computer-border);
+		background: var(--clr-computer-bg);
+	}
+}
