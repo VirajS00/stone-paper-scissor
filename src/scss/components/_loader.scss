@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+.loader {
+	height: 1.2em;
+	width: 1.2em;
+	background-color: var(--clr-loader-200);
+	border-radius: 50%;
+	animation: loader 2s infinite;
+
+	@include pseudo($left: 120%) {
+		background-color: var(--clr-loader-300);
+		border-radius: 50%;
+		height: 100%;
+		width: 100%;
+	}
+
+	@include pseudo($loc: after, $left: 240%) {
+		background-color: var(--clr-loader-400);
+		border-radius: 50%;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@keyframes loader {
+	0% {
+		--clr-loader-200: #3f3f3f;
+		--clr-loader-300: #c4c4c4;
+		--clr-loader-400: #858585;
+	}
+
+	50% {
+		--clr-loader-200: #858585;
+		--clr-loader-300: #3f3f3f;
+		--clr-loader-400: #c4c4c4;
+	}
+
+	100% {
+		--clr-loader-200: #c4c4c4;
+		--clr-loader-300: #858585;
+		--clr-loader-400: #3f3f3f;
+	}
+}

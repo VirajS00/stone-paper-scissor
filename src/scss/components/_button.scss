@@ -26,5 +26,12 @@
 	&.computer {
 		border-color: var(--clr-computer-border);
 		background: var(--clr-computer-bg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		div {
+			transform: translateX(-120%);
+		}
 	}
 }
