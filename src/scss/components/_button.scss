@@ -22,6 +22,42 @@
 	padding: 0.5em 1em;
 	border-radius: 100vw;
 	min-height: 5rem;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	&.win {
+		--clr-icons-default: #c5ffaa;
+		--clr-icons-paperEdge: #6fdc7a;
+		background-color: var(--clr-button-winBG);
+		border-color: var(--clr-button-winBorder);
+	}
+
+	&.loose {
+		--clr-icons-default: #ffb9aa;
+		--clr-icons-paperEdge: #ce6666;
+		border-color: var(--clr-button-looseBorder);
+		background-color: var(--clr-button-looseBG);
+	}
+
+	&:not(&.computer) {
+		padding-left: 4.5em;
+	}
+
+	svg {
+		height: 2.2em;
+		position: absolute;
+		left: 0;
+	}
+
+	svg.scissors {
+		left: -0.7em;
+	}
+
+	svg.stone {
+		height: 1.8em;
+	}
 
 	&.computer {
 		border-color: var(--clr-computer-border);
