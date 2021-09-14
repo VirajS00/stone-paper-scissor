@@ -26,6 +26,21 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	transition: background-color 300ms ease;
+
+	&.computer {
+		--clr-button-bg: hsl(0, 0%, 43%);
+		--clr-button-border: hsl(0, 0%, 79%);
+		border-color: var(--clr-button-border);
+		background: var(--clr-button-bg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		div {
+			transform: translateX(-120%);
+		}
+	}
 
 	&.win {
 		--clr-icons-default: #c5ffaa;
@@ -57,17 +72,5 @@
 
 	svg.stone {
 		height: 1.8em;
-	}
-
-	&.computer {
-		border-color: var(--clr-computer-border);
-		background: var(--clr-computer-bg);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		div {
-			transform: translateX(-120%);
-		}
 	}
 }

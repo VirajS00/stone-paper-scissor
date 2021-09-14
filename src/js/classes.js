@@ -66,10 +66,9 @@ class stonePaperScissors {
 
 	show() {
 		let output = this.winLoose();
-		let win = output[1] ? 'Win!' : 'Loose';
 		let value = output[0];
 		return {
-			win: win,
+			win: output[1],
 			value: value
 		};
 	}
