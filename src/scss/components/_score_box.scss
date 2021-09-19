@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+
+.score-box-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: hsl(0 0% 0% / 0.6);
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+
+	.score-box {
+		height: 20em;
+		width: 80vw;
+		max-width: 500px;
+		background-color: #fff;
+		border-radius: 3em;
+		color: #000;
+		@include flex-center;
+
+		div {
+			@include flex-center;
+			text-align: center;
+
+			p.comp {
+				font-size: 2rem;
+				font-weight: 700;
+			}
+
+			h1 {
+				font-weight: 400;
+
+				span {
+					color: #268224;
+				}
+			}
+		}
+	}
+}
