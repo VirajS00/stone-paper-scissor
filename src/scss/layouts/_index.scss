@@ -10,10 +10,21 @@ body {
 	color: #fff;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
 .output {
 	min-width: 100px;
 	min-height: 1rem;
 	background-color: #fff;
 	display: block;
 	color: #000;
+}
+
+h1.title {
+	text-align: center;
 }
