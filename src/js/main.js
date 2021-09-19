@@ -59,6 +59,8 @@ buttons.forEach((button) => {
 				buttonClass: buttonClass,
 				computerClass: computerClass
 			});
+			rounds = 0;
+			score = 0;
 		} else {
 			setTimeout(() => {
 				computerButton.innerHTML = '';
@@ -75,7 +77,7 @@ buttons.forEach((button) => {
 });
 
 scoreContainer.addEventListener('click', (e) => {
-	if (e.target !== document.querySelector('.score-box')) return;
+	if (e.target !== scoreContainer) return;
 
 	scoreContainer.style.pointerEvents = 'none';
 	scoreContainer.style.opacity = 0;
